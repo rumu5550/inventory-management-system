@@ -1,0 +1,26 @@
+[
+    {
+        "invoice_id": "INV-TEST-O1",
+        "order_id": "TEST-O1",
+        "total_amount": 2000.0,
+        "date": "2026-03-28 22:46:06"
+    },
+    {
+        "invoice_id": "INV-ORD-2",
+        "order_id": "ORD-2",
+        "total_amount": 2000.0,
+        "date": "2026-03-28 22:52:30"
+    },
+    {
+        "invoice_id": "INV-ORD-3",
+        "order_id": "ORD-3",
+        "total_amount": 2400.0,
+        "date": "2026-03-28 23:04:43"
+    },
+    {
+        "invoice_id": "INV-ORD-4",
+        "order_id": "ORD-4",
+        "total_amount": 400.0,
+        "date": "2026-03-28 23:10:22"
+    }
+]

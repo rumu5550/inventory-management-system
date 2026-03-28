@@ -1,0 +1,23 @@
+[
+    {
+        "customer_id": "CUST-1",
+        "name": "Siyan",
+        "email": "siyan@gmail.com",
+        "phone": "01909750608",
+        "address": "dhaka"
+    },
+    {
+        "customer_id": "CUST-NEW-2",
+        "name": "Customer-1",
+        "email": "",
+        "phone": "9988776655",
+        "address": ""
+    },
+    {
+        "customer_id": "CUST-3",
+        "name": "Customer-2",
+        "email": "",
+        "phone": "011125582522",
+        "address": ""
+    }
+]
