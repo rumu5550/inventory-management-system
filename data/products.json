@@ -1,20 +1,20 @@
 [
     {
-        "product_id": "P001",
-        "name": "New Premium Item",
+        "product_id": "P-001",
+        "name": "Mobile",
         "category": "Electronics",
-        "brand": "BrandX",
-        "price": 299.99,
-        "quantity": 25,
+        "brand": "Xiaomi",
+        "price": 200.0,
+        "quantity": 10,
         "description": ""
     },
     {
-        "product_id": "P002",
-        "name": "New Premium Item",
-        "category": "Electronics",
-        "brand": "BrandX",
-        "price": 299.99,
-        "quantity": 25,
+        "product_id": "P-002",
+        "name": "Hello",
+        "category": "Gello",
+        "brand": "Miaw",
+        "price": 100.0,
+        "quantity": 15,
         "description": ""
     }
 ]
