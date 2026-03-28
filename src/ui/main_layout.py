@@ -31,12 +31,33 @@ class MainLayout(ctk.CTkFrame):
                                           command=lambda: self.app.show_products())
         self.btn_products.grid(row=2, column=0, padx=20, pady=12, sticky="ew")
 
+        self.btn_customers = ctk.CTkButton(self.sidebar_frame, text="  👥 Customers", 
+                                           height=45, corner_radius=10,
+                                           fg_color="transparent", text_color=("gray10", "gray90"), 
+                                           hover_color=("gray70", "gray30"), anchor="w", 
+                                           command=lambda: self.app.show_customers())
+        self.btn_customers.grid(row=3, column=0, padx=20, pady=12, sticky="ew")
+
+        self.btn_sales = ctk.CTkButton(self.sidebar_frame, text="  💰 Sales Orders", 
+                                       height=45, corner_radius=10,
+                                       fg_color="transparent", text_color=("gray10", "gray90"), 
+                                       hover_color=("gray70", "gray30"), anchor="w", 
+                                       command=lambda: self.app.show_sales())
+        self.btn_sales.grid(row=4, column=0, padx=20, pady=12, sticky="ew")
+
+        self.btn_reports = ctk.CTkButton(self.sidebar_frame, text="  📈 Reports", 
+                                         height=45, corner_radius=10,
+                                         fg_color="transparent", text_color=("gray10", "gray90"), 
+                                         hover_color=("gray70", "gray30"), anchor="w", 
+                                         command=lambda: self.app.show_reports())
+        self.btn_reports.grid(row=5, column=0, padx=20, pady=12, sticky="ew")
+
         self.btn_logout = ctk.CTkButton(self.sidebar_frame, text="  🚪 Logout", 
                                         height=45, corner_radius=10,
                                         fg_color="transparent", text_color="#E74C3C", 
                                         hover_color=("gray70", "gray30"), anchor="w", 
                                         command=lambda: self.app.on_logout())
-        self.btn_logout.grid(row=5, column=0, padx=20, pady=40, sticky="ew")
+        self.btn_logout.grid(row=7, column=0, padx=20, pady=40, sticky="ew")
 
         self.content_frame = ctk.CTkFrame(self, fg_color="transparent")
         self.content_frame.grid(row=0, column=1, padx=30, pady=30, sticky="nsew")

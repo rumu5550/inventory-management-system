@@ -16,6 +16,7 @@ class DashboardScreen(ctk.CTkFrame):
         self.welcome_label.pack(pady=(0, 50), padx=35, anchor="w")
 
         self._load_stats()
+        self._load_charts()
 
     def _load_stats(self):
         summary = self.app.product_manager.get_summary()
@@ -37,3 +38,21 @@ class DashboardScreen(ctk.CTkFrame):
         
         val = ctk.CTkLabel(card, text=value_text, font=("Roboto", 32, "bold"), text_color=accent_color)
         val.pack(pady=(0, 45), padx=20)
+
+    def _load_charts(self):
+        import matplotlib.pyplot as plt
+        from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+        
+        chart_frame = ctk.CTkFrame(self, fg_color="transparent")
+        chart_frame.pack(pady=20, padx=35, fill="both", expand=True)
+        
+        data = self.app.analytics_service.get_inventory_report()
+        
+        fig, ax = plt.subplots(figsize=(5, 3))
+        ax.pie(data['stock_levels'], labels=data['categories'], autopct='%1.1f%%', startangle=140, colors=['#3498DB', '#2ECC71', '#F1C40F', '#E74C3C', '#9B59B6'])
+        ax.set_title("Stock Distribution by Category")
+        plt.tight_layout()
+        
+        canvas = FigureCanvasTkAgg(fig, master=chart_frame)
+        canvas.draw()
+        canvas.get_tk_widget().pack(fill="both", expand=True)
