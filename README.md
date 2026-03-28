@@ -1,5 +1,5 @@
 # Inventory Management System (IMS)
-
+### Click on Project Report
 [![Project Report](https://img.shields.io/badge/Project-Report-blue?style=for-the-badge&logo=googledrive)](https://drive.google.com/file/d/1FX8F0A7mNeur0JJI9Y_aS3fR8n8pHhmI/view?usp=sharing)
 
 ## 📌 Project Overview
