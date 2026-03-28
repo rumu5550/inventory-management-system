@@ -5,7 +5,7 @@
         "category": "Electronics",
         "brand": "Xiaomi",
         "price": 200.0,
-        "quantity": 6,
+        "quantity": 216,
         "description": ""
     },
     {
@@ -23,7 +23,7 @@
         "category": "Electronics",
         "brand": "BrandX",
         "price": 1000.0,
-        "quantity": 4,
+        "quantity": 14,
         "description": "High end laptop"
     }
 ]

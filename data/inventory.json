@@ -1,0 +1,76 @@
+{
+    "inventory": [
+        {
+            "id": "101",
+            "name": "Test Product",
+            "qty": 2728,
+            "price": 100.0,
+            "expiry": "2024-01-01",
+            "batch": "B-001"
+        }
+    ],
+    "suppliers": [
+        {
+            "name": "mimi",
+            "phone": "909809809",
+            "email": "N/A",
+            "address": "N/A"
+        },
+        {
+            "name": "wakif",
+            "phone": "87897879",
+            "email": "N/A",
+            "address": "N/A"
+        },
+        {
+            "name": "siyan",
+            "phone": "0191019191",
+            "email": "N/A",
+            "address": "N/A"
+        }
+    ],
+    "purchase_history": [
+        {
+            "date": "2026-03-28 12:31",
+            "supplier": "Global Tech",
+            "p_id": "101",
+            "qty": 2000,
+            "status": "Received"
+        },
+        {
+            "date": "2026-03-28 12:32",
+            "supplier": "fahim",
+            "p_id": "101",
+            "qty": 200,
+            "status": "Received"
+        },
+        {
+            "date": "2026-03-28 17:28",
+            "supplier": "mobasshira",
+            "p_id": "101",
+            "qty": 600,
+            "status": "Received"
+        },
+        {
+            "date": "2026-03-28 17:29",
+            "supplier": "Mabroora",
+            "p_id": "101",
+            "qty": 89,
+            "status": "Received"
+        },
+        {
+            "date": "2026-03-28 18:27",
+            "supplier": "diya",
+            "p_id": "101",
+            "qty": 800,
+            "status": "Received"
+        },
+        {
+            "date": "2026-03-28 23:53",
+            "supplier": "siyan",
+            "p_id": "P-001",
+            "qty": 200,
+            "status": "Received"
+        }
+    ]
+}
