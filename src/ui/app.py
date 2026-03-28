@@ -13,6 +13,9 @@ from src.ui.screens.products_screen import ProductsScreen
 from src.ui.screens.customer_screen import CustomerScreen
 from src.ui.screens.sales_screen import SalesScreen
 from src.ui.screens.report_screen import ReportScreen
+from src.ui.screens.stock_screen import StockScreen
+from src.ui.screens.purchase_screen import PurchaseScreen
+from src.services.database_manager import load_from_json
 
 class InventoryApp(ctk.CTk):
     """Main application controller for the Inventory Management System."""
@@ -40,6 +43,10 @@ class InventoryApp(ctk.CTk):
         self.main_layout = None
 
         self.protocol("WM_DELETE_WINDOW", self.on_closing)
+        
+        # Load friend's data
+        load_from_json()
+        
         self.show_login()
 
     def on_closing(self):
@@ -105,6 +112,16 @@ class InventoryApp(ctk.CTk):
         """Shows the reports and analytics screen."""
         if self.main_layout:
             self.main_layout.show_content(ReportScreen)
+
+    def show_stock(self):
+        """Shows the stock management screen."""
+        if self.main_layout:
+            self.main_layout.show_content(StockScreen)
+
+    def show_purchases(self):
+        """Shows the purchase and supplier management screen."""
+        if self.main_layout:
+            self.main_layout.show_content(PurchaseScreen)
 
     def on_logout(self):
         """Handles logout: clears layout and returns to login."""

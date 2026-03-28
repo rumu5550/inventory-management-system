@@ -52,12 +52,26 @@ class MainLayout(ctk.CTkFrame):
                                          command=lambda: self.app.show_reports())
         self.btn_reports.grid(row=5, column=0, padx=20, pady=12, sticky="ew")
 
+        self.btn_stock = ctk.CTkButton(self.sidebar_frame, text="  📦 Stock Control", 
+                                       height=45, corner_radius=10,
+                                       fg_color="transparent", text_color=("gray10", "gray90"), 
+                                       hover_color=("gray70", "gray30"), anchor="w", 
+                                       command=lambda: self.app.show_stock())
+        self.btn_stock.grid(row=6, column=0, padx=20, pady=12, sticky="ew")
+
+        self.btn_purchases = ctk.CTkButton(self.sidebar_frame, text="  🛒 Purchases", 
+                                           height=45, corner_radius=10,
+                                           fg_color="transparent", text_color=("gray10", "gray90"), 
+                                           hover_color=("gray70", "gray30"), anchor="w", 
+                                           command=lambda: self.app.show_purchases())
+        self.btn_purchases.grid(row=7, column=0, padx=20, pady=12, sticky="ew")
+
         self.btn_logout = ctk.CTkButton(self.sidebar_frame, text="  🚪 Logout", 
                                         height=45, corner_radius=10,
                                         fg_color="transparent", text_color="#E74C3C", 
                                         hover_color=("gray70", "gray30"), anchor="w", 
                                         command=lambda: self.app.on_logout())
-        self.btn_logout.grid(row=7, column=0, padx=20, pady=40, sticky="ew")
+        self.btn_logout.grid(row=9, column=0, padx=20, pady=40, sticky="ew")
 
         self.content_frame = ctk.CTkFrame(self, fg_color="transparent")
         self.content_frame.grid(row=0, column=1, padx=30, pady=30, sticky="nsew")
