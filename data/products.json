@@ -1,0 +1,20 @@
+[
+    {
+        "product_id": "P001",
+        "name": "New Premium Item",
+        "category": "Electronics",
+        "brand": "BrandX",
+        "price": 299.99,
+        "quantity": 25,
+        "description": ""
+    },
+    {
+        "product_id": "P002",
+        "name": "New Premium Item",
+        "category": "Electronics",
+        "brand": "BrandX",
+        "price": 299.99,
+        "quantity": 25,
+        "description": ""
+    }
+]
